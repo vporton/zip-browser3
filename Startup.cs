@@ -23,7 +23,7 @@ namespace zip_browser3
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddRazorPages();
+            services.AddRazorPages();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,7 +41,7 @@ namespace zip_browser3
             }
 
             app.UseHttpsRedirection();
-            //app.UseStaticFiles();
+            app.UseStaticFiles();
 
             app.UseRouting();
 
